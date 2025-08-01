@@ -21,7 +21,7 @@ body {
     .parallax-bg {
       position: absolute;
       top: 0; left: 0; right: 0; bottom: 0;
-      background: url('https://pplx-res.cloudinary.com/image/upload/v1751487156/user_uploads/54557488/506d8e13-97fb-4b94-a5e4-8fe3261e8232/1000014593.jpg') center/cover no-repeat;
+      background: url('https://wallpaperaccess.com/full/313010.jpg') center/cover repeat;
       filter: blur(3px) brightness(0.4);
       z-index: 0;
       transform: translateZ(-1px) scale(2);
