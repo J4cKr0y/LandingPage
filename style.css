@@ -1,0 +1,98 @@
+body {
+      margin: 0;
+      background: #0a0e1a;
+      color: #e0e6f8;
+      font-family: 'Roboto', Arial, sans-serif;
+      overflow-x: hidden;
+    }
+	li {
+	padding-top: 1rem;
+	}
+    .parallax-section {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      perspective: 1px;
+      z-index: 1;
+    }
+    .parallax-bg {
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: url('https://pplx-res.cloudinary.com/image/upload/v1751487156/user_uploads/54557488/506d8e13-97fb-4b94-a5e4-8fe3261e8232/1000014593.jpg') center/cover no-repeat;
+      filter: blur(3px) brightness(0.4);
+      z-index: 0;
+      transform: translateZ(-1px) scale(2);
+    }
+    .section-content {
+      position: relative;
+      z-index: 2;
+      background: rgba(20, 30, 60, 0.85);
+      border: 2px solid #00eaff;
+      border-radius: 18px;
+      box-shadow: 0 0 32px #00eaff44, 0 0 4px #fff2;
+      padding: 3rem 2rem;
+      max-width: 700px;
+      margin: 2rem;
+      backdrop-filter: blur(3px);
+    }
+    h1, h2, h3 {
+      font-family: 'Orbitron', 'Roboto', Arial, sans-serif;
+      color: #00eaff;
+      letter-spacing: 2px;
+      margin-bottom: 1rem;
+    }
+    .cta-btn {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 1rem 2.5rem;
+      background: linear-gradient(90deg, #00eaff 60%, #00ffd0 100%);
+      color: #0a0e1a;
+      font-weight: bold;
+      font-size: 1.25rem;
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 0 18px #00eaff99;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .cta-btn:hover {
+      background: linear-gradient(90deg, #00ffd0 60%, #00eaff 100%);
+    }
+    /* Parallax effect for multiple sections */
+    .parallax-section:nth-child(even) .parallax-bg {
+      filter: blur(4px) brightness(0.3) grayscale(0.2);
+      opacity: 0.7;
+    }
+	.testimonial {
+  font-style: italic;
+  color: #b2f1ff;
+  border-left: 4px solid #00eaff;
+  margin: 2rem 0 1rem 0;
+  padding: 1.2rem 1.5rem;
+  background: rgba(20, 30, 60, 0.75);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #00eaff33;
+}
+.testimonial cite {
+  display: block;
+  margin-top: 1rem;
+  font-size: 0.95em;
+  color: #00ffd0;
+  font-style: normal;
+  text-align: right;
+}
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      .section-content {
+        padding: 1.2rem 0.5rem;
+        margin: 0.5rem;
+      }
+      h1, h2, h3 {
+        font-size: 1.2rem;
+      }
+    }
